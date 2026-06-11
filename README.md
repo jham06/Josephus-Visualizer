@@ -11,7 +11,7 @@ how the circle shrinks by one person at a time.
 - In this case, we want to use a 0-indexed system i.e. the first person is position 0, the recursive function $J(n,k)$ works by looking at the survivor of the circle with $n-1$ people:
     - $J(n,k) = (J(n-1, k) + k) (mod  n)$, with a base case of $J(1,k) = 0$.
  
-## The Approach, and vidualization
+## The Approach, and visualization (Reacta and Vite)
   
 # Intuition 
 -  This idea was originally inspired by the famous Flavious Josephus, a 1st century Jewish historian and military leader. 
