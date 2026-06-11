@@ -11,8 +11,8 @@ how the circle shrinks by one person at a time.
 - In this case, we want to use a 0-indexed system i.e. the first person is position 0, the recursive function $J(n,k)$ works by looking at the survivor of the circle with $n-1$ people:
     - $J(n,k) = (J(n-1, k) + k) (mod  n)$, with a base case of $J(1,k) = 0$.
  
-
+## The Approach, and vidualization
   
 # Intuition 
 -  This idea was originally inspired by the famous Flavious Josephus, a 1st century Jewish historian and military leader. 
-  The legend tells us he and his 40 soldiers were trapped in a cave by Roman soldiers. Prefe
+  The legend tells us he and his 40 soldiers were trapped in a cave by Roman soldiers. To avoid Roman captivity as they preferred mass suicide, the soldiers formed a circle and agreed to kill every third remaining person (k = 3) until no one was left. Josephus, who preferred to live, used this mathematical logic to calculate the last two remaining positions in a way such that it allowed both him and a companion to survive, who would eventually surrender.
