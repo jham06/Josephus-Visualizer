@@ -9,7 +9,7 @@ The Josephus problem is a famous mathematical mathematical puzzle where we imagi
 - Such an algorithm can be applied where we can now eliminate every k-th person rather thanjust every 2nd person. However, if we want to devise this idea, the math becomes a bit more complex, but best solved using a recursive algorithm which tracks
 how the circle shrinks by one person at a time.
 - In this case, we want to use a 0-indexed system i.e. the first person is position 0, the recursive function $J(n,k)$ works by looking at the survivor of the circle with $n-1$ people:
-    - $J(n,k) = (J(n-1, k) + k) (mod  n)$, with a base case of $ J(1,k) = 0$.
+    - $J(n,k) = (J(n-1, k) + k) (mod  n)$, with a base case of $J(1,k) = 0$.
  
 
   
