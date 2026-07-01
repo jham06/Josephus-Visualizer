@@ -1,0 +1,23 @@
+.counter-container {
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.count-display {
+    font-size: 20px;
+    margin-top:0;
+}
+
+.counter-button {
+    border: 2px solid rgb(31, 31, 34);
+    border-radius: 10px;
+    width:80px;
+    height:auto;
+    cursor: pointer;
+    background-color: wheat;
+    font-weight: bold;
+}
+
+.counter-button:hover {
+    background-color: rgb(245, 222, 250);
+}
