@@ -8,7 +8,7 @@ function App() {
 
   return (
     <div className='outer'>
-      <div className='begin'>
+      <div className='begin'> 
         <h1 className="title">⚔️Josephus Problem Visualizer⚔️</h1>
         <h3 className="descrip">The Josephus problem is a famous mathematical puzzle where we imagine N people standing in a circle and starting at position 1, you eliminate every k-th person, counting around the circle until one survivor remains.</h3>
       </div>
