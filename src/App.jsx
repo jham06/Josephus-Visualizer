@@ -3,6 +3,7 @@ import visual from './assets/image.png'
 import Explanation from './Explanation.jsx'
 import Numbers from './numbers.jsx'
 import Kth from './kth.jsx'
+import People from './People.jsx'
 
 import { useState } from 'react'
 
@@ -31,14 +32,14 @@ function App () {
       for (let i = 1; i <= n; i++) {
       const temp = {
         id: i,
-        isAlive: true
+        alive: true
         }
-      arr.push(temp)
+      newArr.push(temp)
       }
       setPeople(newArr)
-      console.log(newArr)
   }
 
+   // console.log(people) used to debug
 
 
   return (
@@ -47,12 +48,14 @@ function App () {
       <h3 className="descrip">The Josephus problem is a famous mathematical puzzle where we imagine N people standing in a circle and starting at position 1, you eliminate every k-th person, counting around the circle until one survivor remains.</h3>
 
       <hr className='line'></hr>
-      <div class="diff">
+      <div className="diff">
         <button className='start' onClick={generate}>▶️Start</button>
         <Numbers people = {n} incrementN = {incrementN} decrementN = {decrementN} resetN = {resetN}/>
         <Kth steps = {k} incrementK = {incrementK} decrementK = {decrementK} resetK = {resetK}/>
+    
         <button className='reset'>🔄RESET</button>
       </div>
+      <div className='PeopleContainer'>{people.map(person => (<People key={person.id} id={person.id} alive={person.alive}/>))}</div>
       <hr className='line'></hr>
       <Explanation />
 
