@@ -1,27 +1,12 @@
-import react, {useState} from 'react'
 
-function Kth () {
+function Kth (props) {
 
-    const [count, setCount] = useState(2) // This sets the initial value to be zero
-
-    const increment = () => {
-        setCount(count + 1);
-
-    }
-
-    const decrement = () => {
-        setCount(Math.max(2, count - 1));
-    }
-
-    const reset = () => {
-        setCount(2)
-    }
-
+    // now using props, i should be able to import the functions into this file?
     return (<div className="counter-container"> 
-        <p className='count-display'> Count: {count}</p>
-        <button className='counter-button' onClick={decrement} >🔽</button>
-        <button className='counter-button' onClick={reset}>🔄RESET</button>
-        <button className='counter-button' onClick={increment}>🔼</button>
+        <p className='count-display'> Steps: {props.steps}</p>
+        <button className='counter-button' onClick={props.decrementK} >🔽</button>
+        <button className='counter-button' onClick={props.resetK}>🔄RESET</button>
+        <button className='counter-button' onClick={props.incrementK}>🔼</button>
         </div>
     )
 }
