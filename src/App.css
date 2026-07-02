@@ -257,3 +257,9 @@
 .reset:hover {
     background-color: rgb(136, 183,270);
 }
+
+.PeopleContainer {
+  position: relative;
+  width: 400px;
+  height: 400px;
+}

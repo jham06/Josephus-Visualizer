@@ -1,7 +1,7 @@
 import './App.css'
 import visual from './assets/image.png'
 import Explanation from './Explanation.jsx'
-import Numbers from './numbers.jsx'
+import Numbers from './Numbers.jsx'
 import Kth from './kth.jsx'
 import People from './People.jsx'
 
@@ -55,7 +55,11 @@ function App () {
     
         <button className='reset'>🔄RESET</button>
       </div>
-      <div className='PeopleContainer'>{people.map(person => (<People key={person.id} id={person.id} alive={person.alive}/>))}</div>
+      <div className='PeopleContainer'>{people.map((person,index) => (<People key={person.id} 
+                                                                              id={person.id} 
+                                                                              alive={person.alive}
+                                                                              index={index}
+                                                                              total={people.length}/>))}</div>
       <hr className='line'></hr>
       <Explanation />
 
