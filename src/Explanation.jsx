@@ -14,7 +14,7 @@ function Explanation() {
           </ul>
           <li><h2>General Case:</h2></li>
           <ul>
-            <li>Such an algorithm can be applied where we can now eliminate every k-th person rather thanjust every 2nd person. However, if we want to devise this idea, the math becomes a bit more complex, but best solved using a recursive algorithm which tracks how the circle shrinks by one person at a time.</li>
+            <li>Such an algorithm can be applied where we can now eliminate every k-th person rather than just every 2nd person. However, if we want to devise this idea, the math becomes a bit more complex, but best solved using a recursive algorithm which tracks how the circle shrinks by one person at a time.</li>
             <li>In this case, we want to use a 0-indexed system i.e. the first person is position 0, the recursive function <i><InlineMath math="J(n,k)"/></i> works by looking at the survivor of the circle with n-1 people:
               <ul>
                 <li><i><InlineMath math="J(n,k) = (J(n-1,k) + k)(mod n)"/></i>, with a base case of <i><InlineMath math="J(1,k) = 0"/></i></li>

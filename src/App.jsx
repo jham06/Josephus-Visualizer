@@ -41,6 +41,26 @@ function App () {
 
    // console.log(people) used to debug
 
+  const [currentIdx, setCurrentIdx] = useState(0);
+
+  function eliminate() {
+
+    // I need to filter people, use the filter function, also need to get alivePeople.length
+
+    const alivePeople = people.filter(person => person.alive)
+    const numAlive = alivePeople.length
+
+    if (alivePeople.length <= 1) {
+      return
+    } else {
+      const remove = (currentIdx + k - 1) % numAlive
+      const exit = alivePeople[remove] // this gets the specific object at the index
+      
+      setPeople(people.map(person => person.id === exit.id ? { ...person, alive: false } : person))
+      setCurrentIdx(remove % (alivePeople.length - 1)); // works so it wraps around. 
+    }
+    // const newPeople = people.filter(person => !person.alive), reserve for now
+  }
 
   return (
     <>
@@ -49,11 +69,11 @@ function App () {
 
       <hr className='line'></hr>
       <div className="diff">
-        <button className='start' onClick={generate}>▶️Start</button>
+        <button className='start' onClick={generate}>🚀 Start</button>
         <Numbers people = {n} incrementN = {incrementN} decrementN = {decrementN} resetN = {resetN}/>
         <Kth steps = {k} incrementK = {incrementK} decrementK = {decrementK} resetK = {resetK}/>
     
-        <button className='reset'>🔄RESET</button>
+        <button className='Next' onClick={eliminate}>▶️Next</button>
       </div>
       <div className='PeopleContainer'>{people.map((person,index) => (<People key={person.id} 
                                                                               id={person.id} 

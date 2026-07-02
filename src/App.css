@@ -235,31 +235,33 @@
   height: 40px;
   text-align: center;
   border-radius: 5px;
-  background-color: rgb(95, 214, 95);
+  background-color: hsl(120, 59%, 61%);
   font-size: medium;
   cursor: pointer;
   
 }
 .start:hover {
-    background-color: rgb(95, 213, 200);
+    background-color: hsl(120, 59%, 51%);
 }
 
-.reset{
+.Next{
   border: 2px solid rgb(31, 31, 34);
   width: 120px;
   height: 40px;
   text-align: center;
   border-radius: 5px;
-  background-color: rgb(136, 183, 253);
+  background-color: hsl(60, 100%, 50%);
   font-size: medium;
   cursor: pointer;
 }
-.reset:hover {
-    background-color: rgb(136, 183,270);
+.Next:hover {
+    background-color: hsl(60, 100%, 40%);
 }
 
 .PeopleContainer {
   position: relative;
-  width: 400px;
-  height: 400px;
+  width: 600px;
+  height:600px;
+  margin: 0 auto;
+  margin-bottom: 10px;
 }
