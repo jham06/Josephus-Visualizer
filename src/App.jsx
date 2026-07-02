@@ -12,13 +12,33 @@ function App () {
   
   const [k, setK] = useState(2)
 
+  // Functions for N
   const incrementN = () => { setN(n + 1)}; // These parts work to set the numbers for N and K
   const decrementN = () => { setN(Math.max(2, n - 1));}
-  const resetN = () => { setN(2)} // Functions for N
+  const resetN = () => { setN(2)} 
 
+  // Functions for K
   const incrementK = () => { setK(k + 1)}
   const decrementK = () => {setK(Math.max(2, k - 1))}
-  const resetK = () => { setK(2)} // Functions for K
+  const resetK = () => { setK(2)} 
+
+  // Now I need to add
+
+  const [people, setPeople] = useState([]) // Initialize as empty array first, now i should update it
+
+  const generate = () => {
+      let newArr = []
+      for (let i = 1; i <= n; i++) {
+      const temp = {
+        id: i,
+        isAlive: true
+        }
+      arr.push(temp)
+      }
+      setPeople(newArr)
+      console.log(newArr)
+  }
+
 
 
   return (
@@ -28,7 +48,7 @@ function App () {
 
       <hr className='line'></hr>
       <div class="diff">
-        <button className='start'>▶️Start</button>
+        <button className='start' onClick={generate}>▶️Start</button>
         <Numbers people = {n} incrementN = {incrementN} decrementN = {decrementN} resetN = {resetN}/>
         <Kth steps = {k} incrementK = {incrementK} decrementK = {decrementK} resetK = {resetK}/>
         <button className='reset'>🔄RESET</button>
