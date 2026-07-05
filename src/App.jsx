@@ -127,7 +127,7 @@ function App () {
                                                                               total={people.length}/>))}</div>
       <div className="bottom-buttons">
         <button className="play-pause" onClick = {() => setisRunning(!isRunning)}>▷ {isRunning ? "Pause" : "Play"}</button>
-        <input className = "speed"type="range" min="200" max="2000" value={speed} onChange={(e) => setSpeed(Number(e.target.value))}/> // this allows me to control the speed of the autoplay. 
+        <input className = "speed"type="range" min="200" max="2000" value={speed} onChange={(e) => setSpeed(Number(e.target.value))}/> 
         <button className='reset' onClick = {reset}>⟳ Reset</button>
       </div>
      
