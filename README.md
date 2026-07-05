@@ -1,4 +1,4 @@
-# ⚔️ Josephus Problem Simulator
+# ⚔️ Josephus Problem Visualizer
 
 An interactive visualization of the Josephus Problem built in pair with React + Vite.
 
