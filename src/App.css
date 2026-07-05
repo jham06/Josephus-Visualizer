@@ -187,7 +187,6 @@
   text-align: center; 
   padding: 10px 20px;
   border-radius: 10px;
-  
   margin: 0 auto;
   text-shadow: 0 0 10px #31a4a8, 0 0 20px #00f5ff;
 }
@@ -285,4 +284,10 @@
   height:600px;
   margin: 0 auto;
   margin-bottom: 10px;
+}
+
+.end {
+    color: #ffffff;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 20px;
 }
