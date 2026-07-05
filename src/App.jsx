@@ -109,7 +109,7 @@ function App () {
 
   return (
     <>
-      <h1 className="title">⚔️Josephus Problem Simulator⚔️</h1>
+      <h1 className="title">⚔️Josephus Problem Visualizer⚔️</h1>
       <h2 className="descrip">The Josephus problem is a famous mathematical puzzle where we imagine N people standing in a circle and starting at position 1, you eliminate every k-th person, counting around the circle until one survivor remains.</h2>
 
       <hr className='line'></hr>
