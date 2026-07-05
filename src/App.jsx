@@ -6,10 +6,11 @@ import Kth from './kth.jsx'
 import People from './People.jsx'
 
 import {useState, useEffect, useRef} from 'react'
-
+import Popup from 'reactjs-popup';
 /* The initial stages of this project, setting up some variables. */
 
 function App () {
+  const [isPopupOpen, setPopupOpen] = useState(false);
   const [isRunning, setisRunning] = useState(false) // for the autoplay
 
   const intervalRef = useRef(null)
@@ -81,6 +82,30 @@ function App () {
 
   // I added eliminate on the dependency array as the isRunning variable correlates witht eh eliminate
 
+  function reset() {
+    let resetArr = []
+    for (let i = 1; i <= n; i++) {
+      const temp = { // re-create the array again. 
+        id: i, 
+        alive: true
+        }
+      resetArr.push(temp)
+      }
+    setPeople(resetArr)
+
+    setisRunning(false) // since it is reset, it should not be running
+    
+    clearInterval(intervalRef.current) // Need to clear the interval again, as it is resetting, but kind of different than pause
+    
+    setCurrentIdx(0)
+    }
+
+   
+    /*const finalPeople = people.filter(person => person.alive)
+    if (finalPeople.length === 1){
+      setPopupOpen(true)
+    } */ // IMPLEMENT POPUP AND WINNING SIGN
+    
 
   return (
     <>
@@ -90,8 +115,8 @@ function App () {
       <hr className='line'></hr>
       <div className="diff">
         <button className='start' onClick={generate}>🚀 Start</button>
-        <Numbers people = {n} incrementN = {incrementN} decrementN = {decrementN} resetN = {resetN}/>
-        <Kth steps = {k} incrementK = {incrementK} decrementK = {decrementK} resetK = {resetK}/>
+        <Numbers people = {n} incrementN = {incrementN} decrementN = {decrementN} resetN = {resetN} isRunning={isRunning}/>
+        <Kth steps = {k} incrementK = {incrementK} decrementK = {decrementK} resetK = {resetK} isRunning={isRunning}/>
     
         <button className='Next' onClick={eliminate}>▶ Next</button>
       </div>
@@ -103,8 +128,9 @@ function App () {
       <div className="bottom-buttons">
         <button className="play-pause" onClick = {() => setisRunning(!isRunning)}>▷ {isRunning ? "Pause" : "Play"}</button>
         <input className = "speed"type="range" min="200" max="2000" value={speed} onChange={(e) => setSpeed(Number(e.target.value))}/> // this allows me to control the speed of the autoplay. 
-        <button className='reset'>⟳ Reset</button>
+        <button className='reset' onClick = {reset}>⟳ Reset</button>
       </div>
+     
       <hr className='line'></hr>
       <Explanation />
 
