@@ -23,12 +23,12 @@ The legend tells us he and his 40 soldiers were trapped in a cave by Roman soldi
 - Vite <img width="20" height="20" alt="vite (1)" src="https://github.com/user-attachments/assets/b3226187-394f-4bb4-a0fe-275698973a13" />
 - CSS3 🎨
 
-## How to run locally?
+## To run this locally, the following pre-requesite and steps are needed.
 
-### Pre-reqs
+### Pre-reqs:
 - Node.js installed in device 
 
-### Step by Step
+### Step by Step:
 1. Clone the following repository:
    git clone https://github.com/jham06/josephus-visualizer.git
 
