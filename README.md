@@ -12,10 +12,10 @@ The idea was originally inspired by the famous Flavious Josephus, a 1st century 
 The legend tells us he and his 40 soldiers were trapped in a cave by Roman soldiers. To avoid Roman captivity as they preferred mass suicide, the soldiers formed a circle and agreed to kill every third remaining person (k = 3) until no one was left. Josephus, who preferred to live, used this mathematical logic to calculate the last two remaining positions in a way such that it allowed both him and a companion to survive, who would eventually surrender.
 
 ## Features
-- Set any number of people (N) and elimination count (K)
-- Step through eliminations one at a time
-- Auto-play feature with adjustable speed
- (700- Glowing green/red circle visualization that highlights survivng and deceased soldiers
+- Set any number of people (N) and steps (K)
+- Step through eliminations one at a time if the user wishes
+- Auto-play feature with adjustable speed (shifting left implies higher speed which is a minimum of 700ms, and shifting right implies slower speed which is a maximum of 2200ms)
+- Glowing green/red circle visualization that highlights survivng and deceased soldiers
 - Announcement of survivor when last person standing remains
 
 ## Tech Stack Used
