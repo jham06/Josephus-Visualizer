@@ -1,33 +1,33 @@
-# ⚔️ Josephus Problem Visualizer
+# ⚔️ Josephus Problem Simulator
 
 An interactive visualization of the Josephus Problem built with React + Vite.
 
 ## 🔗 Live Demo
 https://josephus-visualizer-qani.vercel.app/
 
-## 📖 What is the Josephus Problem?
+## 📖 What is the Josephus Problem? 🛡️
 The idea was originally inspired by the famous Flavious Josephus, a 1st century Jewish historian and military leader. 
 The legend tells us he and his 40 soldiers were trapped in a cave by Roman soldiers. To avoid Roman captivity as they preferred mass suicide, the soldiers formed a circle and agreed to kill every third remaining person (k = 3) until no one was left. Josephus, who preferred to live, used this mathematical logic to calculate the last two remaining positions in a way such that it allowed both him and a companion to survive, who would eventually surrender.
 
-## ✨ Features
+## Features.... ✨✨
 - Set any number of people (N) and elimination count (K)
 - Step through eliminations one at a time
-- Auto-play with adjustable speed
-- Glowing green/red circle visualization
-- Survivor announcement when one person remains
+- Auto-play feature with adjustable speed
+ (700- Glowing green/red circle visualization that highlights survivng and deceased soldiers
+- Announcement of survivor when last person standing remains
 
 ## 🛠️ Tech Stack
 - React
 - Vite
 - CSS3
 
-## 🚀 Running Locally
+## How to run locally?
 
-### Prerequisites
+### Pre-reqs
 - Node.js installed on your machine
 
-### Steps
-1. Clone the repository
+### Step by Step
+1. Clone the following repository:
    git clone https://github.com/jham06/josephus-visualizer.git
 
 2. Navigate into the project folder
@@ -41,6 +41,4 @@ The legend tells us he and his 40 soldiers were trapped in a cave by Roman soldi
 
 5. Open your browser and go to
    http://localhost:5173
-## Backstory
--  This idea was originally inspired by the famous Flavious Josephus, a 1st century Jewish historian and military leader. 
-  The legend tells us he and his 40 soldiers were trapped in a cave by Roman soldiers. To avoid Roman captivity as they preferred mass suicide, the soldiers formed a circle and agreed to kill every third remaining person (k = 3) until no one was left. Josephus, who preferred to live, used this mathematical logic to calculate the last two remaining positions in a way such that it allowed both him and a companion to survive, who would eventually surrender.
+
