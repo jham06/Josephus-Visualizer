@@ -315,7 +315,6 @@
   font-size:larger;
   letter-spacing: 2px;
   margin-bottom: 20px;
-  margin-right: 150px;
 }
 
 .play-pause:hover {
@@ -349,6 +348,7 @@
 .bottom-buttons {
   display: flex;
   justify-content:center;
+  justify-content:space-evenly;
   
 }
 

@@ -6,7 +6,7 @@ import Kth from './kth.jsx'
 import People from './People.jsx'
 
 import {useState, useEffect, useRef} from 'react'
-import Popup from 'reactjs-popup';
+
 /* The initial stages of this project, setting up some variables. */
 
 function App () {
