@@ -20,7 +20,7 @@ The legend tells us he and his 40 soldiers were trapped in a cave by Roman soldi
 
 ## Tech Stack Used
 - React ⚛
-- Vite <img width="128" height="128" alt="vite (1)" src="https://github.com/user-attachments/assets/b3226187-394f-4bb4-a0fe-275698973a13" />
+- Vite <img width="40" height="40" alt="vite (1)" src="https://github.com/user-attachments/assets/b3226187-394f-4bb4-a0fe-275698973a13" />
 - CSS3 🎨
 
 ## How to run locally?
