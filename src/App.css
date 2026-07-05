@@ -183,17 +183,22 @@
   }
 }
 .title {
+  font-size: 50px;
   text-align: center; 
-  border: 2px solid rgb(31, 31, 34);
   padding: 10px 20px;
   border-radius: 10px;
-  max-width: 600px;
+  
   margin: 0 auto;
-  background-color: wheat;
+  text-shadow: 0 0 10px #31a4a8, 0 0 20px #00f5ff;
 }
 
 .descrip {
+  color: #a8b8c8;
+  font-size: 32px;
+  font-weight: 400;
   text-align: center;
+  margin: 0 auto;
+  line-height: 1.6;
 }
 
 .romans{  
@@ -205,10 +210,13 @@
   height:auto;
   border: 2px solid rgb(31, 31, 34);
   border-radius: 10px;
+  
 }
+
 * {
-  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  background-color: lavender;
+  font-family: 'Rajdhani', sans-serif;
+  background-color: #0a0a1a;
+  line-height: 1.6;
 }
 
 .diff {
@@ -230,32 +238,45 @@
 }
 
 .start{
-  border: 2px solid rgb(31, 31, 34);
+  background-color: transparent;
+  color: #a8eeff;
+  border: 2px solid #a8eeff; /* LEts just add some modern UI styling, using ai of course*/
+  font-family:'Rajdhani', sans-serif;
   width: 120px;
   height: 40px;
   text-align: center;
-  border-radius: 5px;
-  background-color: hsl(120, 59%, 61%);
+  border-radius: 6px;
   font-size: medium;
   cursor: pointer;
-  
+  font-weight: 700;
+  font-size:larger;
+  letter-spacing: 2px;
 }
 .start:hover {
-    background-color: hsl(120, 59%, 51%);
+  background-color: #a8eeff;
+  color: #0a0a1a;
+  box-shadow: 0 0 10px rgba(168, 238, 255, 0.4);
 }
 
 .Next{
-  border: 2px solid rgb(31, 31, 34);
+  background-color: transparent;
+  color: #a8eeff;
+  border: 2px solid #a8eeff; /* LEts just add some modern UI styling, using ai of course*/
+  font-family:'Rajdhani', sans-serif;
   width: 120px;
   height: 40px;
   text-align: center;
-  border-radius: 5px;
-  background-color: hsl(60, 100%, 50%);
+  border-radius: 6px;
   font-size: medium;
   cursor: pointer;
+  font-weight: 700;
+  font-size:larger;
+  letter-spacing: 2px;
 }
 .Next:hover {
-    background-color: hsl(60, 100%, 40%);
+  background-color: #a8eeff;
+  color: #0a0a1a;
+  box-shadow: 0 0 10px rgba(168, 238, 255, 0.4);
 }
 
 .PeopleContainer {

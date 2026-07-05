@@ -13,7 +13,8 @@ const x = centerX + radius * Math.cos(angle) // But radius is not defined???
 const y = centerY + radius * Math.sin(angle)
 
 
-        return (<div className="person" style={{ position: "absolute", left: x-25, top: y-25, backgroundColor: props.alive ? "green": "red"}}>{props.id}</div>
+        return (<div className="person" style={{ position: "absolute", left: x-25, top: y-25, backgroundColor: props.alive ? "green": "red", boxShadow: props.alive ? '0 0 10px #00ff88, 0 0 20px rgba(0, 255, 136, 0.4)': '0 0 10px #ff3333, 0 0 20px rgba(255, 51, 51, 0.4)', color: '#0a0a1a',
+  fontWeight: 'bold'}}>{props.id}</div>
         )
 }
 

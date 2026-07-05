@@ -4,29 +4,43 @@
 }
 
 .count-display {
-    font-size: 20px;
+    background-color: transparent;
+    color: #a8eeff;
+    padding: 8px 16px;
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 700;
+    letter-spacing: 2px;
+    transition: all 0.2s ease;
+    font-size: 26px;
     margin: 0 auto;
     margin-bottom: 10px;
-    border-radius: 10px;
-    padding: 5px;
-    border: 2px solid rgb(31, 31, 34);
     width: fit-content; /* add this in later projects so the border fits tightly around words*/
-    background-color: rgb(255, 255, 255);
     text-align: center;
+
 }
 
 .counter-button {
-    border: 2px solid rgb(31, 31, 34);
-    border-radius: 10px;
-    width:80px;
+    background-color: transparent;
+    color: #a8eeff;
+    border: 2px solid #a8eeff;
+    border-radius: 6px;
+    padding: 8px 16px;
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 700;
+    cursor: pointer;
+    letter-spacing: 2px;
+    transition: all 0.2s ease;
+    width: fit-content;
     height:auto;
     cursor: pointer;
-    background-color: wheat;
-    font-weight: bold;
+    text-align: center;
+    font-size: 20px
 }
 
 .counter-button:hover {
-    background-color: rgb(245, 222, 250);
+    background-color: #a8eeff;
+    color: #0a0a1a;
+    box-shadow: 0 0 10px rgba(168, 238, 255, 0.4);
 }
 
 .person{
@@ -42,4 +56,12 @@
     font-size:large;
     position: absolute;
     gap: 10px;
+    border: 2px solid #a8eeff;
 }
+
+.middle {
+    color: #ffffff;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 20px;
+}
+
