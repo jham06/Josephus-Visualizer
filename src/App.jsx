@@ -114,7 +114,7 @@ function App () {
 
       <hr className='line'></hr>
       <div className="diff">
-        <button className='start' onClick={generate}>🚀 Start</button>
+        <button className='start' onClick={generate}>⚙️ Start</button>
         <Numbers people = {n} incrementN = {incrementN} decrementN = {decrementN} resetN = {resetN} isRunning={isRunning}/>
         <Kth steps = {k} incrementK = {incrementK} decrementK = {decrementK} resetK = {resetK} isRunning={isRunning}/>
     

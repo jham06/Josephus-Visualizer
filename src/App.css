@@ -191,12 +191,7 @@
   letter-spacing: 4px;
   
   padding: 20px;
-  text-shadow: 
-    0 0 5px #fff,
-    0 0 10px #fff,
-    0 0 20px hsl(234, 78%, 39%),
-    0 0 40px hsl(234, 78%, 39%),
-    0 0 80px hsl(234, 78%, 39%);
+  
   font-size: 50px;
   text-align: center; 
   padding: 10px 20px;
@@ -293,8 +288,8 @@
 
 .PeopleContainer {
   position: relative;
-  width: 600px;
-  height:600px;
+  width: 800px;
+  height:800px;
   margin: 0 auto;
   margin-bottom: 10px;
 }
