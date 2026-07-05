@@ -5,13 +5,20 @@ import Numbers from './Numbers.jsx'
 import Kth from './kth.jsx'
 import People from './People.jsx'
 
-import { useState } from 'react'
+import {useState, useEffect, useRef} from 'react'
 
-/* Im just testing */
+/* The initial stages of this project, setting up some variables. */
+
 function App () {
+  const [isRunning, setisRunning] = useState(false) // for the autoplay
+
+  const intervalRef = useRef(null)
+
   const [n, setN] = useState(2) // I am moving these variables here because they wont be correctly updated if defined in another file
   
   const [k, setK] = useState(2)
+
+  const [speed, setSpeed] = useState(700) // IN this case, the speed is initially 700ms, but the user can speed up if they wish 
 
   // Functions for N
   const incrementN = () => { setN(n + 1)}; // These parts work to set the numbers for N and K
@@ -62,6 +69,19 @@ function App () {
     // const newPeople = people.filter(person => !person.alive), reserve for now
   }
 
+  useEffect(()=> {
+    if (isRunning) {
+      intervalRef.current = setInterval(() => eliminate(), speed)
+    } else {
+      clearInterval(intervalRef.current)
+    }
+
+     return () => clearInterval(intervalRef.current)
+  },[isRunning, eliminate, speed]) // side function, and its option for cleanup 
+
+  // I added eliminate on the dependency array as the isRunning variable correlates witht eh eliminate
+
+
   return (
     <>
       <h1 className="title">⚔️Josephus Problem Simulator⚔️</h1>
@@ -73,13 +93,18 @@ function App () {
         <Numbers people = {n} incrementN = {incrementN} decrementN = {decrementN} resetN = {resetN}/>
         <Kth steps = {k} incrementK = {incrementK} decrementK = {decrementK} resetK = {resetK}/>
     
-        <button className='Next' onClick={eliminate}>▶️Next</button>
+        <button className='Next' onClick={eliminate}>▶ Next</button>
       </div>
       <div className='PeopleContainer'>{people.map((person,index) => (<People key={person.id} 
                                                                               id={person.id} 
                                                                               alive={person.alive}
                                                                               index={index}
                                                                               total={people.length}/>))}</div>
+      <div className="bottom-buttons">
+        <button className="play-pause" onClick = {() => setisRunning(!isRunning)}>▷ {isRunning ? "Pause" : "Play"}</button>
+        <input type="range" min="200" max="2000" value={speed} onChange={(e) => setSpeed(Number(e.target.value))}/> // this allows me to control the speed of the autoplay. 
+        <button className='reset'>⟳ Reset</button>
+      </div>
       <hr className='line'></hr>
       <Explanation />
 

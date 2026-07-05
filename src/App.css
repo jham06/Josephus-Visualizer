@@ -291,3 +291,53 @@
     font-family: 'Rajdhani', sans-serif;
     font-size: 20px;
 }
+
+.play-pause {
+  background-color: transparent;
+  color: #a8eeff;
+  border: 2px solid #a8eeff; /* LEts just add some modern UI styling, using ai of course*/
+  font-family:'Rajdhani', sans-serif;
+  width: 120px;
+  height: 40px;
+  text-align: center;
+  border-radius: 6px;
+  font-size: medium;
+  cursor: pointer;
+  font-weight: 700;
+  font-size:larger;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+
+.play-pause:hover {
+  background-color: #a8eeff;
+  color: #0a0a1a;
+  box-shadow: 0 0 10px rgba(168, 238, 255, 0.4);
+}
+.reset {
+  background-color: transparent;
+  color: #a8eeff;
+  border: 2px solid #a8eeff; /* LEts just add some modern UI styling, using ai of course*/
+  font-family:'Rajdhani', sans-serif;
+  width: 120px;
+  height: 40px;
+  text-align: center;
+  border-radius: 6px;
+  font-size: medium;
+  cursor: pointer;
+  font-weight: 700;
+  font-size:larger;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+
+.reset:hover {
+  background-color: #a8eeff;
+  color: #0a0a1a;
+  box-shadow: 0 0 10px rgba(168, 238, 255, 0.4);
+}
+
+.bottom-buttons {
+  display: flex;
+  justify-content:space-evenly;
+}
