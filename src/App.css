@@ -183,12 +183,25 @@
   }
 }
 .title {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 5rem;
+  font-weight: 900;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  
+  padding: 20px;
+  text-shadow: 
+    0 0 5px #fff,
+    0 0 10px #fff,
+    0 0 20px hsl(234, 78%, 39%),
+    0 0 40px hsl(234, 78%, 39%),
+    0 0 80px hsl(234, 78%, 39%);
   font-size: 50px;
   text-align: center; 
   padding: 10px 20px;
   border-radius: 10px;
   margin: 0 auto;
-  text-shadow: 0 0 10px #31a4a8, 0 0 20px #00f5ff;
 }
 
 .descrip {
@@ -307,6 +320,7 @@
   font-size:larger;
   letter-spacing: 2px;
   margin-bottom: 20px;
+  margin-right: 300px;
 }
 
 .play-pause:hover {
@@ -340,4 +354,6 @@
 .bottom-buttons {
   display: flex;
   justify-content:space-evenly;
+  
 }
+
