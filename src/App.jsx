@@ -132,7 +132,10 @@ function App () {
                                                                               alive={person.alive}
                                                                               index={index}
                                                                               winner = {alivePeople.length === 1 && person.alive}
-                                                                              total={people.length}/>))}</div>
+                                                                              total={people.length}/>))}
+      
+      
+      </div>
       <div className="bottom-buttons">
         <button className="play-pause" onClick = {() => setisRunning(!isRunning)}>▷ {isRunning ? "Pause" : "Play"}</button>
         <input className = "speed"type="range" min="200" max="2000" value={speed} onChange={(e) => setSpeed(Number(e.target.value))}/> 
