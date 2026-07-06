@@ -288,8 +288,8 @@
 
 .PeopleContainer {
   position: relative;
-  width: 600px;
-  height:600px;
+  width: 800px;
+  height: 800px;
   margin: 0 auto;
   margin-bottom: 10px;
 }
@@ -347,8 +347,8 @@
 
 .bottom-buttons {
   display: flex;
-  justify-content:center;
-  justify-content:space-evenly;
-  
+  justify-content: center;
+  gap: 280px;
+  margin-top: 30px;
 }
 
