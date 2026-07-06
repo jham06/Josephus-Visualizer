@@ -113,7 +113,7 @@ function App () {
       setPopupOpen(true)
     } */ // IMPLEMENT POPUP AND WINNING SIGN
     
-
+    const alivePeople = people.filter(person => person.alive) // do this so it doesnt give me a failure 
   return (
     <>
       <h1 className="title">⚔️Josephus Problem Visualizer⚔️</h1>
