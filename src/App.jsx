@@ -9,6 +9,13 @@ import {useState, useEffect, useRef} from 'react'
 
 /* The initial stages of this project, setting up some variables. */
 
+// WHAT CAN I DO NOW?
+//  1. Add a popup that shows which player won
+//  2. Change the circle emoji based on the status
+//  3. Add gradient background. 
+//  4. 
+
+
 function App () {
   const [isPopupOpen, setPopupOpen] = useState(false);
   const [isRunning, setisRunning] = useState(false) // for the autoplay
@@ -124,6 +131,7 @@ function App () {
                                                                               id={person.id} 
                                                                               alive={person.alive}
                                                                               index={index}
+                                                                              winner = {alivePeople.length === 1 && person.alive}
                                                                               total={people.length}/>))}</div>
       <div className="bottom-buttons">
         <button className="play-pause" onClick = {() => setisRunning(!isRunning)}>▷ {isRunning ? "Pause" : "Play"}</button>

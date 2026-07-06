@@ -58,8 +58,18 @@
     position: absolute;
     gap: 10px;
     border: 2px solid #a8eeff;
+    transition: all 0.3s ease;
 }
 
+.person.dead {
+  transform: scale(0.35) rotate(180deg); /* Using this code from gpt, i found it was cool and implement it here. */
+  opacity: 0.2; /*When the person is dead, its scale changes and it rotates, also its opacity is decre*/
+}
+
+.person.winner {
+  transform: scale(1.6); /*FOr the Winner, it incrases its current scale, and sets it to a specific color in this case lime*/
+  box-shadow: 0 0 25px lime;
+}
 .middle {
     color: #ffffff;
     font-family: 'Rajdhani', sans-serif;

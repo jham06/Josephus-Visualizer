@@ -13,9 +13,23 @@ const x = centerX + radius * Math.cos(angle) // But radius is not defined??? my 
 const y = centerY + radius * Math.sin(angle)
 
 
-        return (<div className="person" style={{ position: "absolute", left: x-35, top: y-35, backgroundColor: props.alive ? "green": "red", boxShadow: props.alive ? '0 0 10px #00ff88, 0 0 20px rgba(0, 255, 136, 0.4)': '0 0 10px #ff3333, 0 0 20px rgba(255, 51, 51, 0.4)', color: '#0a0a1a',
-  fontWeight: 'bold'}}>{props.id}</div>
-        )
+        return (<div 
+            className="person" 
+            style={{ 
+                  position: "absolute", 
+                  left: x-35, 
+                  top: y-35, 
+                  backgroundColor: props.alive ? "green": "red", 
+                  boxShadow: props.alive 
+                  ? '0 0 10px #00ff88, 0 0 20px rgba(0, 255, 136, 0.4)'
+                  : '0 0 10px #ff3333, 0 0 20px rgba(255, 51, 51, 0.4)', 
+                  color: '#0a0a1a',
+                  fontWeight: 'bold',
+                  transform: props.alive ? 'scale(1)' : 'scale(0.5) rotate(180deg)', /* THis works to shrink and spin when eliminated */
+                  opacity: props.alive ? 1 : 0.3, /* IF the person dies, it fades out */
+                  transition: 'all 0.4s ease' /*It makes all changes animate smoothly instead of snapping, described in my words in blinks instead of sharp clicks.  */
+            }}>{props.id}</div>
+     )
 }
 
 export default People

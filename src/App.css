@@ -220,9 +220,9 @@
   
 }
 
-* {
+body {
   font-family: 'Rajdhani', sans-serif;
-  background-color: #0a0a1a;
+  background-image: linear-gradient(hsl(240, 44%, 17%), hsl(240, 44%, 7%));
   line-height: 1.6;
 }
 
@@ -236,7 +236,7 @@
 }
 
 .line {
-  border-top: 3px dashed rgb(31, 31, 34); border-bottom: none; 
+  border-top: 3px dashed rgb(5, 5, 5); border-bottom: none; 
 }
 
 .end {
