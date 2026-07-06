@@ -4,8 +4,7 @@ An interactive visualization of the Josephus Problem built in pair with React + 
 
 ## 🔗 Live Demo
 https://josephus-visualizer-qani.vercel.app/
-<img width="1022" height="743" alt="image" src="https://github.com/user-attachments/assets/73e141a8-1ec9-41ee-a52e-72e313125512" />
-
+<img width="947" height="881" alt="image" src="https://github.com/user-attachments/assets/ea8c8402-ac9d-484e-8c6b-a0e4eae4980b" />
 
 ## What is the Josephus Problem?
 The idea was originally inspired by the famous Flavious Josephus, a 1st century Jewish historian and military leader. 
