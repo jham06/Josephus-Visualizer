@@ -27,17 +27,21 @@ function App () {
   
   const [k, setK] = useState(2)
 
+  const MIN = 2;
+
+  const MAX = 50; // ok now i can set min and max, so i dont break my fucking code. 
+
   const [speed, setSpeed] = useState(700) // IN this case, the speed is initially 700ms, but the user can speed up if they wish 
 
   // Functions for N
-  const incrementN = () => { setN(n + 1)}; // These parts work to set the numbers for N and K
-  const decrementN = () => { setN(Math.max(2, n - 1));}
-  const resetN = () => { setN(2)} 
+  const incrementN = () => {setN(n => Math.min(MAX, n + 1))}; // These parts work to set the numbers for N and K
+  const decrementN = () => {setN(n => Math.max(MAX, Math.max(MIN, n - 1)))} // if not go back to  setK(k + 1) and setK(Math.max(2, k - 1))
+  const resetN = () => {setN(2)} 
 
   // Functions for K
-  const incrementK = () => { setK(k + 1)}
-  const decrementK = () => {setK(Math.max(2, k - 1))}
-  const resetK = () => { setK(2)} 
+  const incrementK = () => {setK(k => Math.min(MAX, k + 1))}
+  const decrementK = () => {setK(k => Math.max(MAX, Math.max(MIN, k - 1)))}
+  const resetK = () => {setK(2)} 
 
   // Now I need to add
 

@@ -183,9 +183,9 @@
   }
 } /* hehe */
 .title {
-  font-family: 'Orbitron', sans-serif;
+  font-family: "Courier New", Courier, monospace;
   font-size: 5rem;
-  font-weight: 700;
+  font-weight:400px;
   color: #fff;
   text-transform: uppercase;
   letter-spacing: 4px;
