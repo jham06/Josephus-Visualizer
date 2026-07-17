@@ -222,7 +222,8 @@
 
 body {
   font-family: 'Rajdhani', sans-serif;
-  background-image: linear-gradient(hsl(240, 44%, 17%), hsl(240, 44%, 7%));
+  /*background-image: linear-gradient(hsl(240, 44%, 17%), hsl(240, 44%, 7%));*/
+  background-color: #1a1a1a;
   line-height: 1.6;
 }
 
