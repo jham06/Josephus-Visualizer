@@ -25,7 +25,7 @@ function Explanation() {
        <h1>Sources</h1> 
        <ul>
           <li><a href="https://www.google.com/search?sca_esv=04c1e04211928c2f&rlz=1C1CHBF_enCA1164CA1164&sxsrf=APpeQnvm6FbraCg7A-jXu3D91SmpVg0nPg:1784264530581&udm=7&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832cSpkWkfSwsmpNIrD_OQ-UfVcuk_CN5lZ7ooDDWHK2MvRnkJCfpKMCXqclK-P4WAh82d25jqGtbeY99CshApuFApJdhBniVRKv_-rylb_ASjcXJYoQ2hox6HVTmY1M1uLkVuRADjuugOu2Tw38WgSDDphzX2mMJEqRuZd6SsW6lkNPUO2A&q=josephus+problem&sa=X&ved=2ahUKEwjB856s99iVAxWjDzQIHaekGv0QtKgLegQIGhAB&biw=1920&bih=957&dpr=1#fpstate=ive&vld=cid:dff328ab,vid:uCsD3ZGzMgE,st:0">Check out this video that pulled my interest</a></li>
-          <li><a href="https://en.wikipedia.org/wiki/Josephus_problem"></a>More detailed information about the Josephus Problem</li>
+          <li><a href="https://en.wikipedia.org/wiki/Josephus_problem">More info on Wikipedia</a></li>
         </ul>  
     </div>
     )
