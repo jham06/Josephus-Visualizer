@@ -6,6 +6,7 @@ import Kth from './kth.jsx'
 import People from './People.jsx'
 
 import {useState, useEffect, useRef} from 'react'
+import { use } from 'react'
 
 /* The initial stages of this project, setting up some variables. */
 
@@ -87,8 +88,18 @@ function App () {
      return () => clearInterval(intervalRef.current)
   },[isRunning, eliminate, speed]) // side function, and its option for cleanup 
 
+  /*
+  useEffect( () => {
+    const finalPeople = people.filter(person => person.alive)
+    if (finalPeople.length === 1 && finalPeople.length > 0){
+      console.log(`this is ${finalPeople.length}`)
+      window.alert(`Congratulations Player ${finalPeople[0].id}, you are the last standing survivor!`)
+    }
+  }, [people]) // People is the dependency
+
   // I added eliminate on the dependency array as the isRunning variable correlates witht eh eliminate
 
+    */
   function reset() {
     let resetArr = []
     for (let i = 1; i <= n; i++) {
@@ -111,7 +122,15 @@ function App () {
     /*const finalPeople = people.filter(person => person.alive)
     if (finalPeople.length === 1){
       setPopupOpen(true)
-    } */ // IMPLEMENT POPUP AND WINNING SIGN
+    }  // IMPLEMENT POPUP AND WINNING SIGN */
+
+    function final () {
+      const finalPeople = people.filter(person => person.alive)
+      if (finalPeople.length === 1){
+        return true;
+      }
+    }
+    
     
     const alivePeople = people.filter(person => person.alive) // do this so it doesnt give me a failure 
   return (
@@ -135,13 +154,17 @@ function App () {
                                                                               total={people.length}/>))}
       
       
-      </div>
+      </div >
+
       <div className="bottom-buttons">
         <button className="play-pause" onClick = {() => setisRunning(!isRunning)}>▷ {isRunning ? "Pause" : "Play"}</button>
         <input className = "speed"type="range" min="200" max="2000" value={speed} onChange={(e) => setSpeed(Number(e.target.value))}/> 
         <button className='reset' onClick = {reset}>⟳ Reset</button>
       </div>
-     
+
+      <div className='message'> {final() ? `Congratulations Player ${alivePeople[0].id}, you are the last standing survivor!` : ""}
+
+      </div>
       <hr className='line'></hr>
       <Explanation />
 

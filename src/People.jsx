@@ -28,7 +28,7 @@ const y = centerY + radius * Math.sin(angle)
                   transform: props.alive ? 'scale(1)' : 'scale(0.5) rotate(180deg)', /* THis works to shrink and spin when eliminated */
                   opacity: props.alive ? 1 : 0.3, /* IF the person dies, it fades out */
                   transition: 'all 0.4s ease' /*It makes all changes animate smoothly instead of snapping, described in my words in blinks instead of sharp clicks.  */
-            }}>{props.alive ? "♡": "☠︎︎"}</div>
+            }}>{props.alive ? "❤️": "☠️"}</div>
      )
 }
 
