@@ -15,7 +15,8 @@ The legend tells us he and his 40 soldiers were trapped in a cave by Roman soldi
 - Step through eliminations one at a time if the user wishes
 - Auto-play feature with adjustable speed (shifting left implies higher speed which is a minimum of 700ms, and shifting right implies slower speed which is a maximum of 2200ms)
 - Alternating glowing green/red circle visualization, and heart/skull emojis that highlights survivng and deceased soldiers.
-- Announcement of survivor when last person standing remains'
+- Announcement of survivor when last person standing remains
+- The players are one-indexed to eliminate any confusion.
 
 ## Restriction:
 - The number of people and steps have a minimum of 2, and a maximum of 50. This is mainly due to performance issues, as it would be hard to visualize 50000 people in a small radius of a circle.
